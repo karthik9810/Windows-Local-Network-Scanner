@@ -1,0 +1,10 @@
+Write-Host ""
+Write-Host "=== QUICK NETWORK SCAN ==="
+Write-Host ""
+
+$network = Read-Host "Enter network range (example: 192.168.1.0/24)"
+
+nmap -sn $network
+
+Write-Host ""
+Write-Host "Scan Complete"
